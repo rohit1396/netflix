@@ -1,0 +1,27 @@
+.continuewatch_row {
+    margin-left: 20px;
+    color: white;
+}
+
+.continuewatch_rowPosters {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+}
+
+.continuewatch_rowPosters::-webkit-scrollbar {
+    display: none;
+}
+
+.continuewatch_rowPoster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.continuewatch_rowPoster:hover {
+    transform: scale(1.12);
+}

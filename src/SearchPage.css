@@ -1,0 +1,10 @@
+.searchpage {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.searchpage > img {
+    object-fit: contain;
+    width: 150px;
+}
