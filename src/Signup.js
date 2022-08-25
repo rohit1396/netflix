@@ -41,7 +41,7 @@ const Signup = () => {
         </Link>
       </div>
       <form onSubmit={userRegister} action="" className="signup_form">
-        <h2>Create Netflix account to start Your Membership</h2>
+        <h2>Create account to start Your Netflix Membership</h2>
         <h5>UserName</h5>
         <input
           type="text"
