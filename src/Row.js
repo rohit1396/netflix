@@ -4,7 +4,6 @@ import YouTube from "react-youtube";
 import axios from "./axios";
 import { MovieState } from "./context/MovieContext";
 import "./Row.css";
-// import { useStateValue } from "./StateProvider";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
