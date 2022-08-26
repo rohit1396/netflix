@@ -53,19 +53,6 @@
     /* left: 20px; */
 }
 
-/* .nav_avatar {
-    object-fit: contain;
-    width: 30px;
-    position: fixed;
-    right: 20px;
-} */
-
-/* .nav_userInfo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-} */
-
 .nav_user > h4 {
     font-size: 0.8rem;
     font-weight: 400;

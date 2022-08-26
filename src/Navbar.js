@@ -6,7 +6,6 @@ import { auth } from "./firebase";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "./axios";
 import { API_KEY } from "./requests";
-import SearchPage from "./SearchPage";
 
 // const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -15,7 +14,6 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const [searchMovie, setSearchMovie] = useState([]);
   const { user } = useStateValue();
-  // const { searchMovie } = useStateValue();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -74,10 +72,6 @@ const Navbar = () => {
           <h3 onClick={handleLogout}>Sign out</h3>
         </div>
       )}
-      {/* {input != "" &&
-        searchMovie.map((movie) => (
-          <SearchPage title={movie?.title} img={movie.poster_path} />
-        ))} */}
     </div>
   );
 };
