@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { auth } from "./firebase";
 import Home from "./Home";
 import ProtectedRoute from "./ProtectedRoute";
 import SearchPage from "./SearchPage";
