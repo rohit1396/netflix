@@ -4,15 +4,15 @@ import SearchIcon from "@mui/icons-material/Search";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import { useNavigate, Link } from "react-router-dom";
-import axios from "./axios";
-import { API_KEY } from "./requests";
+// import axios from "./axios";
+// import { API_KEY } from "./requests";
 
 // const base_url = "https://image.tmdb.org/t/p/original/";
 
 const Navbar = () => {
   const [input, setInput] = useState("");
   const [show, setShow] = useState(false);
-  const [searchMovie, setSearchMovie] = useState([]);
+  // const [searchMovie, setSearchMovie] = useState([]);
   const { user } = useStateValue();
   const navigate = useNavigate();
 
@@ -31,14 +31,14 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleMovie = async () => {
-    const getMovie = await axios.get(
-      `/search/movie?api_key=${API_KEY}&query=${input}`
-    );
-    console.log(getMovie);
-    setSearchMovie(getMovie.data.results);
-    // setInput("");
-  };
+  // const handleMovie = async () => {
+  //   const getMovie = await axios.get(
+  //     `/search/movie?api_key=${API_KEY}&query=${input}`
+  //   );
+  //   console.log(getMovie);
+  //   setSearchMovie(getMovie.data.results);
+  //   // setInput("");
+  // };
   // console.log(searchMovie);
 
   const handleLogout = async () => {
@@ -63,7 +63,7 @@ const Navbar = () => {
           onChange={(e) => setInput(e.target.value)}
         />
         <Link to="/home/searchpage">
-          <SearchIcon className="nav_searchButton" onClick={handleMovie} />
+          <SearchIcon className="nav_searchButton" />
         </Link>
       </div>
       {user && (
