@@ -1,14 +1,14 @@
 import React from "react";
 import Banner from "./Banner";
 import ContinueWatch from "./components/ContinueWatch";
-import { MovieState } from "./context/MovieContext";
+// import { MovieState } from "./context/MovieContext";
 import "./Home.css";
 import Navbar from "./Navbar";
 import requests from "./requests";
 import Row from "./Row";
 
 const Home = () => {
-  const [{ continueWatching }] = MovieState();
+  // const [{ continueWatching }] = MovieState();
   return (
     <div className="home">
       <Navbar />
