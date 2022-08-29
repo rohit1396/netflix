@@ -54,21 +54,30 @@
 
 /* media queries */
 
-@media (min-width:320px) and (max-width:400px) {
+@media (max-width:330px) {
     .signin_form {
         max-width: 250px;
     }
 }
 
-@media screen and (max-width:425px) {
+@media (min-width:331px) and (max-width:425px) {
     .signin_form {
-        max-width: 300px;
+        max-width: 290px;
     }
 }
 
-@media screen and (max-width:762px) {
+@media (min-width:426px) and (max-width:762px) {
     .signin_form {
         max-width: 350px;
     }
 }
+
+@media (min-width:763px) and (max-width:1024px) {
+    .signin_form {
+        max-width: 400px;
+    }
+}
+
+
+
 
