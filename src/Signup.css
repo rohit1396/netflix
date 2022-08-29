@@ -9,11 +9,13 @@
 
 .signup_nav {
     position: fixed;
+    z-index: 10;
     top: 0;
     height: 30px;
     padding: 20px;
     width: 100%;    
     border-bottom: 1px solid lightgray;
+    background-color: white;
 }
 
 .signup_navLogo {
@@ -43,6 +45,7 @@
     border: 1px solid lightgray;
     border-radius: 2px;
     padding: 20px;
+    z-index: 1;
 }
 
 .signup_form > h2 {
@@ -86,6 +89,49 @@
     font-size: 1rem;
     cursor: pointer;
 }
+
+/* Media queries */
+
+@media (max-width:330px) {
+    .signup_navLogo{
+        width: 110px;
+    }
+    .signup_signInButton{
+        width: 75px;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+    .signup_form {
+        max-width: 250px;
+    }
+}
+
+@media (min-width:331px) and (max-width:425px) {
+    .signup_navLogo{
+        width: 110px;
+    }
+    .signup_signInButton{
+        width: 75px;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+    .signup_form {
+        max-width: 290px;
+    }
+}
+
+@media (min-width:426px) and (max-width:762px) {
+    .signup_form {
+        max-width: 350px;
+    }
+}
+
+@media (min-width:763px) and (max-width:1024px) {
+    .signup_form {
+        max-width: 400px;
+    }
+}
+
 
 
 
